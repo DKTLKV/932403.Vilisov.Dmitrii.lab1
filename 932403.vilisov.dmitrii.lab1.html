@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О себе — Любитель кино</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #111;
+      color: #e6e6e6;
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    header {
+      background-color: #000;
+      border-bottom: 2px solid #d4af37;
+      padding: 30px 25px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #d4af37;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      color: #999;
+      font-size: 0.95em;
+      margin-top: 6px;
+      font-style: italic;
+    }
+
+    main {
+      padding: 30px 25px;
+    }
+
+    section, aside, form {
+      margin-bottom: 30px;
+    }
+
+    h2, h3 {
+      color: #d4af37;
+      border-bottom: 1px solid #333;
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+    }
+
+    h2 { font-size: 1.3em; }
+    h3 { font-size: 1.1em; border-bottom: none; }
+
+    ul, ol {
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    ul li::marker { color: #d4af37; }
+    ol li::marker { color: #d4af37; font-weight: bold; }
+
+    aside {
+      background-color: #222;
+      border-left: 3px solid #d4af37;
+      padding: 16px 20px;
+      border-radius: 4px;
+    }
+
+    aside p {
+      margin-bottom: 4px;
+    }
+
+    .avatar {
+      display: block;
+      margin: 0 auto 30px;
+      border: 2px solid #d4af37;
+      border-radius: 50%;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 4px;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 9px 12px;
+      margin-bottom: 14px;
+      background-color: #111;
+      border: 1px solid #444;
+      border-radius: 4px;
+      color: #e6e6e6;
+      font-family: inherit;
+      font-size: 0.95em;
+    }
+
+    form input:focus,
+    form textarea:focus {
+      outline: none;
+      border-color: #d4af37;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    form button {
+      background-color: #d4af37;
+      color: #111;
+      border: none;
+      padding: 10px 24px;
+      font-size: 0.95em;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    form button:hover {
+      background-color: #e6c757;
+    }
+
+    footer {
+      background-color: #000;
+      border-top: 1px solid #333;
+      text-align: center;
+      padding: 16px;
+      color: #888;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <header>
+      <h1>Вилисов Дмитрий</h1>
+      <p>Любитель кино и сериалов</p>
+    </header>
+
+    <main>
+
+      <img class="avatar" src="https://github.com/DKTLKV/932403.Vilisov.Dmitrii.lab1/blob/main/photo_2026-08-06_12-37-03.jpg=Аватар" alt="Портрет автора" width="140" height="140">
+
+      <section>
+        <h2>Навыки</h2>
+        <ul>
+          <li>Сценарный анализ</li>
+          <li>Понимание операторской работы</li>
+          <li>Монтаж и цветокоррекция</li>
+          <li>Кинокритика</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Проекты</h2>
+        <ol>
+          <li>Альтернативный сценарий для «Матрицы»</li>
+          <li>Фанатский трейлер к «Игре престолов»</li>
+          <li>Ремейк «Крёстного отца» в стиле киберпанк</li>
+          <li>Сериал «Друзья» в жанре хоррор</li>
+        </ol>
+      </section>
+
+      <aside>
+        <h3>Любимый режиссёр</h3>
+        <p>Кристофер Нолан</p>
+        <p>Любимый жанр — научная фантастика</p>
+      </aside>
+
+      <form>
+        <h3>Обратная связь</h3>
+
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" placeholder="Ваше имя">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" placeholder="Ваше сообщение..."></textarea>
+
+        <button type="submit">Отправить</button>
+      </form>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Вилисов Дмитрий</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
